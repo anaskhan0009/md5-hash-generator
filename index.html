@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free MD5 Hash Generator Online — MD5 Checksum for Text & Files | Dinal Studios</title>
+<meta name="description" content="Free MD5 hash generator for text and files — instant MD5 checksums in your browser, plus why MD5 is broken for security and when it's still OK.">
+<meta name="keywords" content="md5 hash generator, md5 generator online, md5 checksum, generate md5, md5 file hash, md5 checker, md5 calculator, is md5 secure, md5 collision, online hash tool">
+<meta name="author" content="Dinal Studios">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://anaskhan0009.github.io/md5-hash-generator/">
+<meta property="og:title" content="Free MD5 Hash Generator Online — MD5 Checksum for Text & Files | Dinal Studios">
+<meta property="og:description" content="Free MD5 hash generator for text and files — instant MD5 checksums in your browser, plus why MD5 is broken for security and when it's still OK.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anaskhan0009.github.io/md5-hash-generator/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free MD5 Hash Generator Online — MD5 Checksum for Text & Files | Dinal Studios">
+<meta name="twitter:description" content="Free MD5 hash generator for text and files — instant MD5 checksums in your browser, plus why MD5 is broken for security and when it's still OK.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "MD5 Hash Generator \u2014 MD5 Checksum Online",
+  "url": "https://anaskhan0009.github.io/md5-hash-generator/",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Any (Web Browser)",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Dinal Studios",
+    "url": "https://github.com/anaskhan0009"
+  },
+  "description": "Free online MD5 hash generator for text and files with a hash checker and an honest guide to why MD5 is broken for security and only safe for non-security checksums."
+}
+</script>
+<style>
+  * { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body { margin: 0; background: #0a0f1a; color: #dbe4f3; }
+  header { background: radial-gradient(1000px 400px at 50% -80px, #14532d 0%, #0a0f1a 60%); padding: 46px 16px 30px; text-align: center; border-bottom: 1px solid #1d2b45; }
+  header h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: .5px; }
+  header h1 span { color: #22c55e; }
+  header p { margin: 0; color: #93a5c4; font-size: 15px; }
+  .mono { font-family: 'Consolas', 'Courier New', monospace; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 22px 14px 46px; }
+  .card { background: #111a2c; border: 1px solid #1f2c47; border-radius: 14px; padding: 22px; margin-bottom: 20px; }
+  .card h2 { margin: 0 0 6px; font-size: 20px; color: #fff; }
+  .card h2 .tag { color: #22c55e; font-size: 13px; vertical-align: middle; }
+  .card .sub { color: #93a5c4; font-size: 13.5px; margin: 0 0 16px; }
+  textarea, input[type=text], input[type=password], select { width: 100%; padding: 12px; border-radius: 9px; border: 1px solid #2a3a5c; background: #0a0f1a; color: #fff; font-size: 15px; }
+  textarea { min-height: 90px; resize: vertical; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .btn { background: #22c55e; color: #06280f; border: none; padding: 11px 20px; border-radius: 9px; cursor: pointer; font-weight: 700; font-size: 14px; }
+  .btn:hover { background: #2fe673; }
+  .btn.dark { background: #1f2c47; color: #dbe4f3; }
+  .btn.dark:hover { background: #2a3c61; }
+  .out { background: #0a0f1a; border: 1px dashed #2a3a5c; border-radius: 9px; padding: 13px; font-size: 14px; word-break: break-all; min-height: 24px; }
+  .ok { color: #22c55e; font-weight: 800; }
+  .bad { color: #ef4444; font-weight: 800; }
+  .warn { color: #f59e0b; font-weight: 800; }
+  .terms { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 620px){ .terms { grid-template-columns: 1fr; } }
+  .term { background: #0a0f1a; border: 1px solid #1f2c47; border-radius: 10px; padding: 12px 14px; font-size: 13.5px; }
+  .term b { color: #fff; }
+  .term .cat { display: inline-block; font-size: 11px; font-weight: 700; color: #22c55e; border: 1px solid #14532d; border-radius: 12px; padding: 1px 8px; margin-left: 6px; vertical-align: middle; }
+  .rule { background: #2a1215; border: 1px solid #7f1d1d; color: #fecaca; border-radius: 10px; padding: 13px 15px; font-size: 14px; margin-top: 14px; }
+  .flagok { background: #0d2818; border: 1px solid #14532d; color: #bbf7d0; border-radius: 10px; padding: 13px 15px; font-size: 14px; margin-top: 12px; }
+  .flagwarn { background: #2b2108; border: 1px solid #92600a; color: #fde68a; border-radius: 10px; padding: 13px 15px; font-size: 14px; margin-top: 12px; }
+  .privacy { text-align: center; color: #64769a; font-size: 12.5px; margin-top: 4px; }
+  footer { text-align: center; color: #55688c; font-size: 12px; padding: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  td, th { padding: 8px 10px; border-bottom: 1px solid #1f2c47; text-align: left; vertical-align: top; }
+  th { color: #93a5c4; font-weight: 600; }
+  .chip { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12.5px; font-weight: 800; margin: 2px 4px 2px 0; }
+  .chip.pass { background: #14532d; color: #86efac; }
+  .chip.fail { background: #7f1d1d; color: #fecaca; }
+  .chip.none { background: #713f12; color: #fde68a; }
+  .hop { border-left: 3px solid #22c55e; background: #0a0f1a; border-radius: 0 10px 10px 0; padding: 11px 14px; margin-bottom: 10px; font-size: 13.5px; }
+  .hop b { color: #fff; }
+  .hop .when { color: #93a5c4; font-size: 12.5px; }
+  .links a { display: inline-block; margin: 4px 6px 4px 0; padding: 8px 14px; background: #0a0f1a; border: 1px solid #2a3a5c; border-radius: 20px; color: #a9c6f5; text-decoration: none; font-size: 13.5px; }
+  .links a:hover { border-color: #22c55e; color: #fff; }
+  .opt { display: block; width: 100%; text-align: left; background: #0a0f1a; border: 1px solid #2a3a5c; color: #dbe4f3; padding: 12px 14px; border-radius: 9px; cursor: pointer; font-size: 14.5px; margin-bottom: 9px; }
+  .opt:hover { border-color: #22c55e; }
+  .opt.right { border-color: #22c55e; background: #0d2818; }
+  .opt.wrong { border-color: #ef4444; background: #2a1215; }
+  .opt:disabled { cursor: default; opacity: .92; }
+  .bar { height: 10px; background: #0a0f1a; border: 1px solid #2a3a5c; border-radius: 6px; overflow: hidden; }
+  .bar > div { height: 100%; background: #22c55e; width: 0%; transition: width .3s; }
+  .catbtn { background: #1f2c47; color: #dbe4f3; border: 1px solid #2a3a5c; padding: 8px 14px; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; }
+  .catbtn.on { background: #22c55e; color: #06280f; border-color: #22c55e; }
+
+</style>
+</head>
+
+<body>
+<header>
+  <h1><span>#</span> MD5 Hash Generator</h1>
+  <p>Instant MD5 checksums for text &amp; files — plus the honest truth about MD5 security — by Dinal Studios</p>
+</header>
+<div class="wrap">
+
+  <div class="card">
+    <div class="rule" style="margin-top:0">⚠️ <b>Read this first:</b> MD5 is <b>broken for security</b>. Collisions can be created on purpose, so NEVER use MD5 for passwords, signatures or verifying untrusted downloads. It survives only as a quick, non-security checksum (spotting accidental file corruption, cache keys, legacy systems). For security use <b>SHA-256</b> — there is a free generator linked below.</div>
+  </div>
+
+  <div class="card">
+    <h2>🧮 MD5 Hash of Text <span class="tag">INSTANT</span></h2>
+    <p class="sub">Type or paste any text. The MD5 hash updates as you type, computed locally by a pure-JavaScript MD5 implementation — the text never leaves this page.</p>
+    <textarea id="txtIn" class="mono" placeholder="Type text to hash… e.g. hello"></textarea>
+    <div class="row" style="margin-top:10px">
+      <label style="font-size:13.5px;color:#c6d2e8"><input type="checkbox" id="upper"> UPPERCASE output</label>
+    </div>
+    <div class="out mono" id="hashOut" style="margin-top:12px">Your MD5 hash will appear here…</div>
+    <div class="row" style="margin-top:12px">
+      <button class="btn" onclick="copyOut('hashOut')">Copy Hash</button>
+      <span style="font-size:13px;color:#93a5c4">MD5 · 32 hex characters · 128 bits</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📁 MD5 Checksum of a File</h2>
+    <p class="sub">Select a file to compute its MD5 checksum locally. Handy for matching legacy checksums published by older projects, or for quick corruption spot-checks of your own files.</p>
+    <input type="file" id="fileIn">
+    <div class="out mono" id="fileOut" style="margin-top:12px">No file selected yet.</div>
+    <div class="row" style="margin-top:12px">
+      <button class="btn dark" onclick="copyOut('fileOut')">Copy File Hash</button>
+      <span id="fileInfo" style="font-size:13px;color:#93a5c4"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✅ MD5 Checker — Do They Match?</h2>
+    <p class="sub">Compare two MD5 hashes character by character. Identical hashes mean identical data (for accidental-corruption checks). One different character means different data.</p>
+    <input type="text" id="cmpA" class="mono" placeholder="Hash 1 — the one you computed" style="margin-bottom:10px">
+    <input type="text" id="cmpB" class="mono" placeholder="Hash 2 — the published / expected checksum">
+    <div class="row" style="margin-top:12px">
+      <button class="btn" onclick="compareHashes()">Compare Hashes</button>
+      <span id="cmpResult" style="font-size:15px"></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎓 MD5 Explained — A Brilliant Tool That Time Broke</h2>
+    <div class="terms">
+      <div class="term"><b>What MD5 is.</b> Designed in 1992 by Ron Rivest, MD5 turns any input into a 128-bit fingerprint written as 32 hex characters. It was fast, simple, and became the internet's default checksum for downloads, file verification and (mistakenly) password storage.</div>
+      <div class="term"><b>What "broken" means.</b> A secure hash must make it practically impossible to find two different inputs with the same hash (a "collision"). Researchers demonstrated MD5 collisions in 2004, and by 2008 attackers forged a real web certificate with one. Collisions are now cheap to produce on a home computer.</div>
+      <div class="term"><b>Why passwords + MD5 = disaster.</b> MD5 is FAST — billions of guesses per second on a GPU. A leaked database of MD5 password hashes falls to brute force almost immediately. Password storage needs slow, salted algorithms: bcrypt, scrypt or Argon2.</div>
+      <div class="term"><b>Where MD5 is still fine.</b> Non-adversarial jobs: detecting accidental corruption (a flipped bit during transfer), deduplication, cache keys, checksums inside rsync/Git-style tooling for non-security purposes, and matching legacy fingerprints where nobody is trying to deceive you.</div>
+    </div>
+    <table style="margin-top:14px">
+      <tr><th>Job</th><th>MD5?</th><th>Use instead</th></tr>
+      <tr><td>Quick corruption spot-check of your own file</td><td>Acceptable</td><td>—</td></tr>
+      <tr><td>Verifying a downloaded program is genuine</td><td><b>NO</b></td><td>SHA-256 + publisher signature</td></tr>
+      <tr><td>Storing user passwords</td><td><b>NEVER</b></td><td>Argon2 / bcrypt with salt</td></tr>
+      <tr><td>Digital signatures &amp; certificates</td><td><b>NO</b></td><td>SHA-256 / SHA-512</td></tr>
+      <tr><td>Cache keys, dedup, legacy checksums</td><td>Acceptable</td><td>—</td></tr>
+    </table>
+    <p style="font-size:14px">Need the secure option? Try our <a href="https://anaskhan0009.github.io/sha256-hash-generator/" style="color:#22c55e;font-weight:700">free SHA-256 Hash Generator</a>.</p>
+    <p class="privacy">🔒 100% private: all hashing happens on your device. No text or file is ever uploaded.</p>
+  </div>
+  <div class="card">
+    <h2>🧰 More Free Tools by Dinal Studios</h2>
+    <p class="sub">Free cyber security tools that run 100% in your browser — no sign-up, no uploads, no tracking.</p>
+    <div class="links"><a href="https://anaskhan0009.github.io/sha256-hash-generator/">SHA-256 Hash Generator — The Secure Choice</a><a href="https://anaskhan0009.github.io/hash-generator-checker/">SHA-1 / SHA-256 / SHA-512 Hash Generator &amp; Checker</a><a href="https://anaskhan0009.github.io/secure-message-encryptor/">Secure Message Encryptor (AES-256)</a><a href="https://anaskhan0009.github.io/cyber-security-toolkit/">Complete Cyber Security Toolkit</a><a href="https://anaskhan0009.github.io/cyber-security-glossary/">Cyber Security Glossary — 80+ Terms</a><a href="https://anaskhan0009.github.io/password-generator-tool/">Strong Password &amp; Passphrase Generator</a></div>
+  </div>
+
+  <footer>Built by Dinal Studios · Free online MD5 hash generator &amp; checksum calculator · Educational and defensive use only</footer>
+</div>
+<script>
+
+function md5hex(input){
+  var S = [7,12,17,22, 7,12,17,22, 7,12,17,22, 7,12,17,22,
+           5,9,14,20, 5,9,14,20, 5,9,14,20, 5,9,14,20,
+           4,11,16,23, 4,11,16,23, 4,11,16,23, 4,11,16,23,
+           6,10,15,21, 6,10,15,21, 6,10,15,21, 6,10,15,21];
+  var K = new Array(64);
+  for (var i = 0; i < 64; i++) K[i] = Math.floor(Math.abs(Math.sin(i + 1)) * 4294967296) | 0;
+
+  // Padding: 0x80, zeros until length % 64 == 56, then 64-bit LE bit-length
+  var bitLen = input.length * 8;
+  var paddedLen = input.length + 1;
+  while (paddedLen % 64 !== 56) paddedLen++;
+  paddedLen += 8;
+  var buf = new Uint8Array(paddedLen);
+  buf.set(input);
+  buf[input.length] = 0x80;
+  var low = bitLen >>> 0, high = Math.floor(bitLen / 4294967296) >>> 0;
+  for (var b = 0; b < 4; b++){
+    buf[paddedLen - 8 + b] = (low >>> (8 * b)) & 0xff;
+    buf[paddedLen - 4 + b] = (high >>> (8 * b)) & 0xff;
+  }
+
+  function rol(x, s){ return (x << s) | (x >>> (32 - s)); }
+  var a0 = 0x67452301 | 0, b0 = 0xefcdab89 | 0, c0 = 0x98badcfe | 0, d0 = 0x10325476 | 0;
+  var M = new Array(16);
+
+  for (var off = 0; off < paddedLen; off += 64){
+    for (var w = 0; w < 16; w++){
+      var p = off + w * 4;
+      M[w] = buf[p] | (buf[p + 1] << 8) | (buf[p + 2] << 16) | (buf[p + 3] << 24);
+    }
+    var A = a0, B = b0, C = c0, D = d0;
+    for (var j = 0; j < 64; j++){
+      var F, g;
+      if (j < 16){ F = (B & C) | (~B & D); g = j; }
+      else if (j < 32){ F = (D & B) | (~D & C); g = (5 * j + 1) % 16; }
+      else if (j < 48){ F = B ^ C ^ D; g = (3 * j + 5) % 16; }
+      else { F = C ^ (B | ~D); g = (7 * j) % 16; }
+      F = (F + A + K[j] + M[g]) | 0;
+      A = D; D = C; C = B;
+      B = (B + rol(F, S[j])) | 0;
+    }
+    a0 = (a0 + A) | 0; b0 = (b0 + B) | 0; c0 = (c0 + C) | 0; d0 = (d0 + D) | 0;
+  }
+
+  function wordToHexLE(x){
+    var h = "";
+    for (var b = 0; b < 4; b++) h += ((x >>> (8 * b)) & 0xff).toString(16).padStart(2, "0");
+    return h;
+  }
+  return wordToHexLE(a0) + wordToHexLE(b0) + wordToHexLE(c0) + wordToHexLE(d0);
+}
+
+var enc3 = new TextEncoder();
+function applyCase3(h){ return document.getElementById("upper").checked ? h.toUpperCase() : h; }
+
+function hashText3(){
+  var t = document.getElementById("txtIn").value;
+  var out = document.getElementById("hashOut");
+  if (!t){ out.textContent = "Your MD5 hash will appear here…"; return; }
+  out.textContent = applyCase3(md5hex(enc3.encode(t)));
+}
+function hashFile3(){
+  var f = document.getElementById("fileIn").files[0];
+  var out = document.getElementById("fileOut");
+  if (!f){ out.textContent = "No file selected yet."; return; }
+  out.textContent = "Hashing… (large files may take a moment)";
+  var reader = new FileReader();
+  reader.onload = function(){
+    var hex = md5hex(new Uint8Array(reader.result));
+    out.textContent = applyCase3(hex);
+    document.getElementById("fileInfo").textContent = f.name + " · " + (f.size / 1024).toFixed(1) + " KB · MD5";
+  };
+  reader.readAsArrayBuffer(f);
+}
+function copyOut(id){
+  var t = document.getElementById(id).textContent;
+  if (t && navigator.clipboard) navigator.clipboard.writeText(t);
+}
+function compareHashes(){
+  var a = document.getElementById("cmpA").value.trim().toLowerCase().replace(/\s+/g, "");
+  var b = document.getElementById("cmpB").value.trim().toLowerCase().replace(/\s+/g, "");
+  var r = document.getElementById("cmpResult");
+  if (!a || !b){ r.innerHTML = '<span class="bad">Paste both hashes first.</span>'; return; }
+  if (!/^[0-9a-f]+$/.test(a) || !/^[0-9a-f]+$/.test(b)){ r.innerHTML = '<span class="bad">That doesn\'t look like a hex hash.</span>'; return; }
+  if (a.length !== b.length){ r.innerHTML = '<span class="bad">✗ NO MATCH — different lengths (' + a.length + " vs " + b.length + ").</span>"; return; }
+  if (a === b){ r.innerHTML = '<span class="ok">✓ MATCH — identical hashes, identical data.</span>'; return; }
+  var diff = 0;
+  for (var i = 0; i < a.length; i++) if (a[i] !== b[i]) diff++;
+  r.innerHTML = '<span class="bad">✗ NO MATCH — ' + diff + " of " + a.length + " characters differ.</span>";
+}
+document.getElementById("txtIn").addEventListener("input", hashText3);
+document.getElementById("upper").addEventListener("change", function(){ hashText3(); hashFile3(); });
+document.getElementById("fileIn").addEventListener("change", hashFile3);
+</script>
+</body>
+</html>
